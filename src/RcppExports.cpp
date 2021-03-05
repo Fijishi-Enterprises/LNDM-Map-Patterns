@@ -7,14 +7,14 @@
 using namespace Rcpp;
 
 // rcpp_ccl
-void rcpp_ccl(IntegerMatrix data, int directions);
-RcppExport SEXP _landscapemetrics_rcpp_ccl(SEXP dataSEXP, SEXP directionsSEXP) {
+IntegerMatrix rcpp_ccl(IntegerMatrix data);
+RcppExport SEXP _landscapemetrics_rcpp_ccl(SEXP dataSEXP) {
 BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< IntegerMatrix >::type data(dataSEXP);
-    Rcpp::traits::input_parameter< int >::type directions(directionsSEXP);
-    rcpp_ccl(data, directions);
-    return R_NilValue;
+    rcpp_result_gen = Rcpp::wrap(rcpp_ccl(data));
+    return rcpp_result_gen;
 END_RCPP
 }
 // rcpp_ccl2
@@ -26,17 +26,6 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< int >::type directions(directionsSEXP);
     rcpp_ccl2(data, directions);
     return R_NilValue;
-END_RCPP
-}
-// rcpp_ccl3
-IntegerMatrix rcpp_ccl3(IntegerMatrix data);
-RcppExport SEXP _landscapemetrics_rcpp_ccl3(SEXP dataSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< IntegerMatrix >::type data(dataSEXP);
-    rcpp_result_gen = Rcpp::wrap(rcpp_ccl3(data));
-    return rcpp_result_gen;
 END_RCPP
 }
 // rcpp_xy_from_matrix
@@ -208,9 +197,8 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_landscapemetrics_rcpp_ccl", (DL_FUNC) &_landscapemetrics_rcpp_ccl, 2},
+    {"_landscapemetrics_rcpp_ccl", (DL_FUNC) &_landscapemetrics_rcpp_ccl, 1},
     {"_landscapemetrics_rcpp_ccl2", (DL_FUNC) &_landscapemetrics_rcpp_ccl2, 2},
-    {"_landscapemetrics_rcpp_ccl3", (DL_FUNC) &_landscapemetrics_rcpp_ccl3, 1},
     {"_landscapemetrics_rcpp_xy_from_matrix", (DL_FUNC) &_landscapemetrics_rcpp_xy_from_matrix, 2},
     {"_landscapemetrics_rcpp_cell_from_xy", (DL_FUNC) &_landscapemetrics_rcpp_cell_from_xy, 2},
     {"_landscapemetrics_rcpp_create_neighborhood", (DL_FUNC) &_landscapemetrics_rcpp_create_neighborhood, 1},

@@ -339,7 +339,7 @@ void ContourTracing(int cy, int cx, int labelindex, int tracingdirection) {
   }
 }
 
-IntegerMatrix rcpp_ccl3(IntegerMatrix data) {
+IntegerMatrix rcpp_ccl(IntegerMatrix data) {
   auto out = clone(data);
   const auto nrow = out.nrow();
   const auto ncol = out.ncol();
@@ -384,87 +384,10 @@ IntegerMatrix rcpp_ccl3(IntegerMatrix data) {
   for (row = 0; row < nrow; row++) {
     for (col = 0; col < ncol; col++) {
       if (out[row + nrow * col] == -1) {
-        out[row + nrow * col] = 0;
+        out[row + nrow * col] = NA_INTEGER;
       }
     }
   }
 
   return (out);
-}
-
-#if 0
-#include <R.h>
-#include <Rinternals.h>
-
-SEXP ccl(SEXP tdata) {
-    // define the pointers for the data
-    PROTECT(tdata = coerceVector(tdata, INTSXP));
-    data = INTEGER(tdata); // this is a binary matrix of data
-    int *dims =
-            INTEGER(coerceVector(getAttrib(tdata, R_DimSymbol),
-                                 INTSXP)); // get the dimension of the input matrix
-    nrow = dims[0];
-    ncol = dims[1]; // assign the number of rows and columns in the matrix
-
-    // setup the output matrix
-    SEXP ans;
-    PROTECT(ans = allocMatrix(INTSXP, nrow, ncol));
-    out = INTEGER(ans); // pointer to output dataset
-
-    // cycle through and copy data to out
-    int row, col;
-    for (row = 0; row < nrow; row++) {
-        for (col = 0; col < ncol; col++) {
-            out[row + nrow * col] = 0;
-        }
-    }
-
-    // cycle through the map and label the regions
-    int tracingdirection, ConnectedComponentsCount = 0, labelindex = 0;
-    for (row = 0; row < nrow; row++) {
-        for (col = 0, labelindex = 0; col < ncol; col++) {
-            if (data[row + nrow * col] == 1) { // black pixel
-                if (labelindex != 0) {           // use pre-pixel label
-                    out[row + nrow * col] = labelindex;
-                } else {
-                    labelindex = out[row + nrow * col];
-                    if (labelindex == 0) {
-                        labelindex = ++ConnectedComponentsCount;
-                        tracingdirection = 0;
-                        ContourTracing(row, col, labelindex,
-                                       tracingdirection); // external contour
-                        out[row + nrow * col] = labelindex;
-                    }
-                }
-            } else if (labelindex != 0) { // white pixel & pre-pixel has been labeled
-                if (out[row + nrow * col] == 0) {
-                    tracingdirection = 1;
-                    ContourTracing(row, col - 1, labelindex,
-                                   tracingdirection); // internal contour
-                }
-                labelindex = 0;
-            }
-        }
-    }
-
-    // cycle through and replace -1 with 0 and insert NA where appropriate
-    for (row = 0; row < nrow; row++) {
-        for (col = 0; col < ncol; col++) {
-            if (data[row + nrow * col] == NA_INTEGER) {
-                out[row + nrow * col] = NA_INTEGER;
-            } else if (out[row + nrow * col] == -1) {
-                out[row + nrow * col] = 0;
-            }
-        }
-    }
-
-    // return the output data
-    UNPROTECT(2);
-    return (ans);
-}
-#endif
-
-void rcpp_ccl(IntegerMatrix data, int directions) {
-  Ccl ccl(data, directions);
-  ccl.ccl();
 }
