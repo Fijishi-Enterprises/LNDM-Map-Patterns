@@ -147,7 +147,7 @@ sample_lsm_int <- function(landscape,
         # disaggregate if rgeos is installed
         if (nzchar(system.file(package = "rgeos"))) {
 
-            y <- sp::disaggregate(y)
+            #y <- sp::disaggregate(y)
 
         # warning that rgeos is not installed
         } else {
