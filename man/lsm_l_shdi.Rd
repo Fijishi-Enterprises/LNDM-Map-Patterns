@@ -29,7 +29,7 @@ without limit, as the number of classes increases while the proportions are
 equally distributed}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_shdi(landscape)
 
 }

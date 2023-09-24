@@ -43,7 +43,7 @@ and patch shapes simplify. TCA = 0 when every cell in every patch of class i
 is an edge.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_tca(landscape)
 
 }

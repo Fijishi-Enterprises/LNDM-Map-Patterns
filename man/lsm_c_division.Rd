@@ -32,7 +32,7 @@ division index is negatively correlated with the  effective mesh size  (\code{\l
 DIVISION = 1 if all patches of class i are single cells.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_division(landscape)
 
 }

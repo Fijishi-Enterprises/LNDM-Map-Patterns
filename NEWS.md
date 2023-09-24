@@ -203,7 +203,7 @@
     * New function `list_lsm()` function to print available metrics
     * New function `show_lsm()` function to vizualize patch level metrics
 * Bugfixes
-    * Bugfix in `lsm_l_rpr`: Typo in internal function, used landscapemetrics::landscape instead of user input
+    * Bugfix in `lsm_l_rpr`: Typo in internal function, used landscapemetrics3::landscape instead of user input
     * Bugfix in all `show_()` * functions that na.value color is identical
 * Improvements
     * Most `get_`-functions can now take matrix as input and also return a matrix

@@ -18,7 +18,7 @@
 #'
 #' @examples
 #' # get centroid location
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' get_centroids(landscape)
 #'
 #' @aliases get_centroids

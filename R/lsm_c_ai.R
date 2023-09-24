@@ -25,7 +25,7 @@
 #' \code{\link{lsm_l_ai}}
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' lsm_c_ai(landscape)
 #'
 #' @aliases lsm_c_ai

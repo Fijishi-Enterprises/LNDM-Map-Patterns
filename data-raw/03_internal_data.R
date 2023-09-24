@@ -21,7 +21,7 @@ landscape_background <- list("continous" = terra::wrap(terra::rast(landscape_con
 #### Irregular areas ####
 
 # prepare example data ----------------------------------------------------
-my_cat_raster = rast(landscapemetrics::augusta_nlcd)
+my_cat_raster = rast(landscapemetrics3::augusta_nlcd)
 my_cat_raster2 = lsp_signature(my_cat_raster, type = "cove", window = 5, ordered = FALSE)
 my_cat_raster2 = lsp_add_terra(my_cat_raster2)
 irregular_areas = supercells(my_cat_raster2[[-c(1, 2)]], k = 30,

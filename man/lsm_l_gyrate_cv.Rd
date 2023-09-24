@@ -43,7 +43,7 @@ for all patches. Increases, without limit, as the variation of the radius of gyr
 increases.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_gyrate_cv(landscape)
 
 }

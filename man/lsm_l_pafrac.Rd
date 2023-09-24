@@ -38,7 +38,7 @@ issue.
 approaches PAFRAC = 2 for irregular shapes}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_pafrac(landscape)
 
 }

@@ -25,7 +25,7 @@ library(dplyr)
 library(purrr)
 
 # internal data needs to be read
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 ```
 
 ## Visualisization functions

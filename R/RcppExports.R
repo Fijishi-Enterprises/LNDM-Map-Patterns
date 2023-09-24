@@ -2,7 +2,7 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 rcpp_ccl <- function(mat, directions = 8L) {
-    invisible(.Call('_landscapemetrics_rcpp_ccl', PACKAGE = 'landscapemetrics', mat, directions))
+    invisible(.Call('_landscapemetrics3_rcpp_ccl', PACKAGE = 'landscapemetrics3', mat, directions))
 }
 
 #' Coordinates from a matrix
@@ -14,7 +14,7 @@ rcpp_ccl <- function(mat, directions = 8L) {
 #' If NULL, the coordinates will be calculated for the whole matrix
 #' @keywords internal
 rcpp_xy_from_matrix <- function(x, cell = NULL) {
-    .Call('_landscapemetrics_rcpp_xy_from_matrix', PACKAGE = 'landscapemetrics', x, cell)
+    .Call('_landscapemetrics3_rcpp_xy_from_matrix', PACKAGE = 'landscapemetrics3', x, cell)
 }
 
 #' Get cell number
@@ -27,7 +27,7 @@ rcpp_xy_from_matrix <- function(x, cell = NULL) {
 #' @param y A matrix with two columns (row and column numbers)
 #' @keywords internal
 rcpp_cell_from_xy <- function(x, y) {
-    .Call('_landscapemetrics_rcpp_cell_from_xy', PACKAGE = 'landscapemetrics', x, y)
+    .Call('_landscapemetrics3_rcpp_cell_from_xy', PACKAGE = 'landscapemetrics3', x, y)
 }
 
 #' Create neighborhood coordinates
@@ -41,47 +41,47 @@ rcpp_cell_from_xy <- function(x, y) {
 #' Cells with other values (e.g. NA) are ignored.
 #' @keywords internal
 rcpp_create_neighborhood <- function(directions) {
-    .Call('_landscapemetrics_rcpp_create_neighborhood', PACKAGE = 'landscapemetrics', directions)
+    .Call('_landscapemetrics3_rcpp_create_neighborhood', PACKAGE = 'landscapemetrics3', directions)
 }
 
 rcpp_get_boundaries <- function(xx, directions = 4L) {
-    .Call('_landscapemetrics_rcpp_get_boundaries', PACKAGE = 'landscapemetrics', xx, directions)
+    .Call('_landscapemetrics3_rcpp_get_boundaries', PACKAGE = 'landscapemetrics3', xx, directions)
 }
 
 rcpp_get_circle <- function(mat, resolution_xy = 1.0) {
-    .Call('_landscapemetrics_rcpp_get_circle', PACKAGE = 'landscapemetrics', mat, resolution_xy)
+    .Call('_landscapemetrics3_rcpp_get_circle', PACKAGE = 'landscapemetrics3', mat, resolution_xy)
 }
 
 rcpp_get_composition_vector <- function(x) {
-    .Call('_landscapemetrics_rcpp_get_composition_vector', PACKAGE = 'landscapemetrics', x)
+    .Call('_landscapemetrics3_rcpp_get_composition_vector', PACKAGE = 'landscapemetrics3', x)
 }
 
 rcpp_get_coocurrence_matrix <- function(x, directions) {
-    .Call('_landscapemetrics_rcpp_get_coocurrence_matrix', PACKAGE = 'landscapemetrics', x, directions)
+    .Call('_landscapemetrics3_rcpp_get_coocurrence_matrix', PACKAGE = 'landscapemetrics3', x, directions)
 }
 
 rcpp_get_coocurrence_matrix_diag <- function(x, directions) {
-    .Call('_landscapemetrics_rcpp_get_coocurrence_matrix_diag', PACKAGE = 'landscapemetrics', x, directions)
+    .Call('_landscapemetrics3_rcpp_get_coocurrence_matrix_diag', PACKAGE = 'landscapemetrics3', x, directions)
 }
 
 rcpp_get_coocurrence_matrix_single <- function(x, directions, single_class) {
-    .Call('_landscapemetrics_rcpp_get_coocurrence_matrix_single', PACKAGE = 'landscapemetrics', x, directions, single_class)
+    .Call('_landscapemetrics3_rcpp_get_coocurrence_matrix_single', PACKAGE = 'landscapemetrics3', x, directions, single_class)
 }
 
 triangular_index <- function(r, c) {
-    .Call('_landscapemetrics_triangular_index', PACKAGE = 'landscapemetrics', r, c)
+    .Call('_landscapemetrics3_triangular_index', PACKAGE = 'landscapemetrics3', r, c)
 }
 
 rcpp_get_coocurrence_vector <- function(x, directions, ordered = TRUE) {
-    .Call('_landscapemetrics_rcpp_get_coocurrence_vector', PACKAGE = 'landscapemetrics', x, directions, ordered)
+    .Call('_landscapemetrics3_rcpp_get_coocurrence_vector', PACKAGE = 'landscapemetrics3', x, directions, ordered)
 }
 
 rcpp_get_entropy <- function(x, base = "log2") {
-    .Call('_landscapemetrics_rcpp_get_entropy', PACKAGE = 'landscapemetrics', x, base)
+    .Call('_landscapemetrics3_rcpp_get_entropy', PACKAGE = 'landscapemetrics3', x, base)
 }
 
 find_min <- function(points, i, m) {
-    .Call('_landscapemetrics_find_min', PACKAGE = 'landscapemetrics', points, i, m)
+    .Call('_landscapemetrics3_find_min', PACKAGE = 'landscapemetrics3', points, i, m)
 }
 
 #' @title First nearest neighbor distance
@@ -100,10 +100,10 @@ find_min <- function(points, i, m) {
 #' @name rcpp_get_nearest_neighbor
 #' @export
 rcpp_get_nearest_neighbor <- function(points) {
-    .Call('_landscapemetrics_rcpp_get_nearest_neighbor', PACKAGE = 'landscapemetrics', points)
+    .Call('_landscapemetrics3_rcpp_get_nearest_neighbor', PACKAGE = 'landscapemetrics3', points)
 }
 
 rcpp_get_unique_values <- function(x, na_omit = TRUE) {
-    .Call('_landscapemetrics_rcpp_get_unique_values', PACKAGE = 'landscapemetrics', x, na_omit)
+    .Call('_landscapemetrics3_rcpp_get_unique_values', PACKAGE = 'landscapemetrics3', x, na_omit)
 }
 

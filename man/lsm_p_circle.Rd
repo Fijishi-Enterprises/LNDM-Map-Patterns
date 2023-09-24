@@ -35,7 +35,7 @@ of the patch and is comparable among patches with different area.
 a linear patch.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_p_circle(landscape)
 
 }

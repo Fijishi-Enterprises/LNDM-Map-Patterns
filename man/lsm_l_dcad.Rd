@@ -47,7 +47,7 @@ a disjunct core area. Increases, without limit, as disjunct core areas become mo
 present, i.e. patches becoming larger and less complex.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_dcad(landscape)
 
 }

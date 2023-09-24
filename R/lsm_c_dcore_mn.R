@@ -36,7 +36,7 @@
 #' @return tibble
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' lsm_c_dcore_mn(landscape)
 #'
 #' @aliases lsm_c_dcore_mn

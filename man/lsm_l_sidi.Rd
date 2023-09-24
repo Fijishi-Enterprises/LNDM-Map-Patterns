@@ -34,7 +34,7 @@ SIDI < 1 when the number of class types increases while the proportions are equa
 distributed}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_sidi(landscape)
 
 }

@@ -24,8 +24,8 @@ usethis::use_data(podlasie_ccilc, overwrite = TRUE)
 # library(terra)
 # library(landscapemetrics)
 #
-# augusta_nlcd <- terra::rast(landscapemetrics::augusta_nlcd)
-# podlasie_ccilc <- terra::rast(landscapemetrics::podlasie_ccilc)
+# augusta_nlcd <- terra::rast(landscapemetrics3::augusta_nlcd)
+# podlasie_ccilc <- terra::rast(landscapemetrics3::podlasie_ccilc)
 #
 # writeRaster(x = augusta_nlcd, filename = "C:/Users/hesselbarth/Desktop/augusta_nlcd.tif", overwrite = TRUE)
 # writeRaster(x = podlasie_ccilc, filename = "C:/Users/hesselbarth/Desktop/podlasie_ccilc.tif", overwrite = TRUE)

@@ -38,7 +38,7 @@ Adding padding to raster
 Adds equally (in all four directions) additional cells around the raster
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 pad_raster(landscape, pad_raster_value = -1, pad_raster_cells = 2)
 
 }

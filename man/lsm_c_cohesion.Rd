@@ -34,7 +34,7 @@ configuration of the landscape.
 Increases if patches of class i become more aggregated.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_cohesion(landscape)
 
 }

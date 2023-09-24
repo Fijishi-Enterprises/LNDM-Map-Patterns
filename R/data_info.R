@@ -10,11 +10,11 @@
 #' @return raster
 #'
 #' @examples
-#' augusta_nlcd <- terra::rast(landscapemetrics::augusta_nlcd)
+#' augusta_nlcd <- terra::rast(landscapemetrics3::augusta_nlcd)
 #' data_info(augusta_nlcd)
-#' podlasie_ccilc <- terra::rast(landscapemetrics::podlasie_ccilc)
+#' podlasie_ccilc <- terra::rast(landscapemetrics3::podlasie_ccilc)
 #' data_info(podlasie_ccilc)
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' data_info(landscape)
 #'
 #' @aliases data_info

@@ -32,7 +32,7 @@ class i would be divided into equally sized patches.
 the number of patches of class i increases and is limited if all cells are a patch}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_split(landscape)
 
 }

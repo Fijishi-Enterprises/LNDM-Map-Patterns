@@ -19,7 +19,7 @@
 #' @return ggplot
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #'
 #' show_lsm(landscape, what = "lsm_p_area", directions = 4)
 #' show_lsm(landscape, what = "lsm_p_shape", class = c(1, 2), label_lsm = TRUE)

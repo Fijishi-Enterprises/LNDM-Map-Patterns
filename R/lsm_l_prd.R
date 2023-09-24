@@ -24,7 +24,7 @@
 #' @return tibble
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' lsm_l_prd(landscape)
 #'
 #' @aliases lsm_l_prd

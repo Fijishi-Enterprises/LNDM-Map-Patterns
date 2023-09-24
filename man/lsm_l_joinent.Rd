@@ -30,7 +30,7 @@ Joint entropy \[H(x, y)\]
 Complexity of a landscape pattern. An overall spatio-thematic complexity metric.
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_joinent(landscape)
 
 }

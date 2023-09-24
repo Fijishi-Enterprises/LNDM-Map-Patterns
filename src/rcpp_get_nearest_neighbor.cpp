@@ -110,7 +110,7 @@ points_class <- terra::xyFromCell(class_boundaries, cell = 1:terra::ncell(class_
 
 X2 <- as.matrix(points_class)
 
-res <- landscapemetrics:::rcpp_get_nearest_neighbor(X2)
+res <- landscapemetrics3:::rcpp_get_nearest_neighbor(X2)
 
 find_closest <- function(X) {
     ord <- order(X[, 1])
@@ -126,16 +126,16 @@ res2 <- find_closest(X2)
 
 stopifnot(identical(res[, 2], res2[, 2]))
 
-microbenchmark::microbenchmark(landscapemetrics:::rcpp_get_nearest_neighbor(X2),
+microbenchmark::microbenchmark(landscapemetrics3:::rcpp_get_nearest_neighbor(X2),
                                find_closest(X2))
 X3 <- X2[rep(seq_len(nrow(X2)), 50),]
 
-microbenchmark::microbenchmark(landscapemetrics:::rcpp_get_nearest_neighbor(X3),
+microbenchmark::microbenchmark(landscapemetrics3:::rcpp_get_nearest_neighbor(X3),
                                find_closest(X3),
                                times = 20)
 
 stopifnot(identical(
-    landscapemetrics:::rcpp_get_nearest_neighbor(X3),
+    landscapemetrics3:::rcpp_get_nearest_neighbor(X3),
     find_closest(X3)
 ))
 

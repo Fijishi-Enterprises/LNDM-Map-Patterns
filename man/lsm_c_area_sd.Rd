@@ -33,7 +33,7 @@ the landscape.
 Increases, without limit, as the variation of patch areas increases.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_area_sd(landscape)
 
 }

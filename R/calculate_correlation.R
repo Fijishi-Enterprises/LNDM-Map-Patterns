@@ -14,7 +14,7 @@
 #' @return list
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' metrics <- calculate_lsm(landscape, what = c("patch", "class"))
 #' calculate_correlation(metrics, method = "pearson")
 #'

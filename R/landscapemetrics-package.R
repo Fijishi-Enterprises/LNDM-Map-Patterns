@@ -8,9 +8,9 @@
 #' utility functions to visualize patches, select metrics and building blocks to
 #' develop new metrics.
 #'
-#' @name landscapemetrics
+#' @name landscapemetrics3
 #' @docType package
-#' @useDynLib landscapemetrics
+#' @useDynLib landscapemetrics3
 #' @importFrom Rcpp evalCpp
 #' @keywords internal
 "_PACKAGE"

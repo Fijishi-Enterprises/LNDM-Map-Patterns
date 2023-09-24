@@ -32,7 +32,7 @@ landscape boundary are included.
 as landscape becomes more fragmented}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_l_te(landscape)
 
 }

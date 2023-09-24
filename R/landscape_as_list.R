@@ -9,7 +9,7 @@
 #' @return list
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' landscape_as_list(c(landscape, landscape))
 #'
 #' @aliases landscape_as_list

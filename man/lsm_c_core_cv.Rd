@@ -44,7 +44,7 @@ because it is scaled to the mean.
 Increases, without limit, as the variation of patch core areas increases.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_core_cv(landscape)
 
 }

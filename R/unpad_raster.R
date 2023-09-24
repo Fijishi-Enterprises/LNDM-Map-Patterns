@@ -15,7 +15,7 @@
 #' @return raster
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' lsm_padded <- pad_raster(landscape, pad_raster_cells = 2, pad_raster_value = -1)
 #' unpad_raster(lsm_padded[[1]], unpad_raster_cells = 2)
 #'

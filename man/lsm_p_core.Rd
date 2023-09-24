@@ -46,7 +46,7 @@ and the patch shape simplifies (more core area). CORE = 0 when every cell in
 the patch is an edge.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_p_core(landscape)
 
 }

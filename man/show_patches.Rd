@@ -36,7 +36,7 @@ The functions plots the landscape with the patches labeled with the
 corresponding patch id.
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 
 show_patches(landscape)
 show_patches(landscape, class = c(1, 2))

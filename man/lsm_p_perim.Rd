@@ -33,7 +33,7 @@ patch area (larger perimeter for larger patches), but also patch shape
 complexity increases.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_p_perim(landscape)
 
 }

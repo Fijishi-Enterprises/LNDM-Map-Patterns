@@ -16,7 +16,7 @@
 #' Based on C++ code from Project Nayuki (https://www.nayuki.io/page/smallest-enclosing-circle).
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #'
 #' # get circle around each patch
 #' get_circumscribingcircle(landscape)

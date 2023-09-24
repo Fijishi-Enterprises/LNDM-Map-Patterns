@@ -13,7 +13,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // rcpp_ccl
 void rcpp_ccl(IntegerMatrix mat, int directions);
-RcppExport SEXP _landscapemetrics_rcpp_ccl(SEXP matSEXP, SEXP directionsSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_ccl(SEXP matSEXP, SEXP directionsSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< IntegerMatrix >::type mat(matSEXP);
@@ -24,7 +24,7 @@ END_RCPP
 }
 // rcpp_xy_from_matrix
 IntegerMatrix rcpp_xy_from_matrix(arma::imat x, Rcpp::Nullable<Rcpp::IntegerVector> cell);
-RcppExport SEXP _landscapemetrics_rcpp_xy_from_matrix(SEXP xSEXP, SEXP cellSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_xy_from_matrix(SEXP xSEXP, SEXP cellSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -36,7 +36,7 @@ END_RCPP
 }
 // rcpp_cell_from_xy
 IntegerVector rcpp_cell_from_xy(arma::imat x, IntegerMatrix y);
-RcppExport SEXP _landscapemetrics_rcpp_cell_from_xy(SEXP xSEXP, SEXP ySEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_cell_from_xy(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -48,7 +48,7 @@ END_RCPP
 }
 // rcpp_create_neighborhood
 IntegerMatrix rcpp_create_neighborhood(arma::imat directions);
-RcppExport SEXP _landscapemetrics_rcpp_create_neighborhood(SEXP directionsSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_create_neighborhood(SEXP directionsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -59,7 +59,7 @@ END_RCPP
 }
 // rcpp_get_boundaries
 IntegerMatrix rcpp_get_boundaries(const IntegerMatrix xx, int directions);
-RcppExport SEXP _landscapemetrics_rcpp_get_boundaries(SEXP xxSEXP, SEXP directionsSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_boundaries(SEXP xxSEXP, SEXP directionsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -71,7 +71,7 @@ END_RCPP
 }
 // rcpp_get_circle
 DataFrame rcpp_get_circle(IntegerMatrix mat, const double resolution_xy);
-RcppExport SEXP _landscapemetrics_rcpp_get_circle(SEXP matSEXP, SEXP resolution_xySEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_circle(SEXP matSEXP, SEXP resolution_xySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -83,7 +83,7 @@ END_RCPP
 }
 // rcpp_get_composition_vector
 IntegerVector rcpp_get_composition_vector(const Rcpp::NumericVector& x);
-RcppExport SEXP _landscapemetrics_rcpp_get_composition_vector(SEXP xSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_composition_vector(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -94,7 +94,7 @@ END_RCPP
 }
 // rcpp_get_coocurrence_matrix
 IntegerMatrix rcpp_get_coocurrence_matrix(const IntegerMatrix x, const arma::imat directions);
-RcppExport SEXP _landscapemetrics_rcpp_get_coocurrence_matrix(SEXP xSEXP, SEXP directionsSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_coocurrence_matrix(SEXP xSEXP, SEXP directionsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -106,7 +106,7 @@ END_RCPP
 }
 // rcpp_get_coocurrence_matrix_diag
 IntegerVector rcpp_get_coocurrence_matrix_diag(const IntegerMatrix x, const arma::imat directions);
-RcppExport SEXP _landscapemetrics_rcpp_get_coocurrence_matrix_diag(SEXP xSEXP, SEXP directionsSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_coocurrence_matrix_diag(SEXP xSEXP, SEXP directionsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -118,7 +118,7 @@ END_RCPP
 }
 // rcpp_get_coocurrence_matrix_single
 IntegerMatrix rcpp_get_coocurrence_matrix_single(const IntegerMatrix x, const arma::imat directions, const int single_class);
-RcppExport SEXP _landscapemetrics_rcpp_get_coocurrence_matrix_single(SEXP xSEXP, SEXP directionsSEXP, SEXP single_classSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_coocurrence_matrix_single(SEXP xSEXP, SEXP directionsSEXP, SEXP single_classSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -131,7 +131,7 @@ END_RCPP
 }
 // triangular_index
 int triangular_index(int r, int c);
-RcppExport SEXP _landscapemetrics_triangular_index(SEXP rSEXP, SEXP cSEXP) {
+RcppExport SEXP _landscapemetrics3_triangular_index(SEXP rSEXP, SEXP cSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -143,7 +143,7 @@ END_RCPP
 }
 // rcpp_get_coocurrence_vector
 NumericVector rcpp_get_coocurrence_vector(IntegerMatrix x, arma::imat directions, bool ordered);
-RcppExport SEXP _landscapemetrics_rcpp_get_coocurrence_vector(SEXP xSEXP, SEXP directionsSEXP, SEXP orderedSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_coocurrence_vector(SEXP xSEXP, SEXP directionsSEXP, SEXP orderedSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -156,7 +156,7 @@ END_RCPP
 }
 // rcpp_get_entropy
 double rcpp_get_entropy(NumericVector x, std::string base);
-RcppExport SEXP _landscapemetrics_rcpp_get_entropy(SEXP xSEXP, SEXP baseSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_entropy(SEXP xSEXP, SEXP baseSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -168,7 +168,7 @@ END_RCPP
 }
 // find_min
 NumericVector find_min(const NumericMatrix& points, int i, int m);
-RcppExport SEXP _landscapemetrics_find_min(SEXP pointsSEXP, SEXP iSEXP, SEXP mSEXP) {
+RcppExport SEXP _landscapemetrics3_find_min(SEXP pointsSEXP, SEXP iSEXP, SEXP mSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -181,7 +181,7 @@ END_RCPP
 }
 // rcpp_get_nearest_neighbor
 NumericMatrix rcpp_get_nearest_neighbor(const NumericMatrix& points);
-RcppExport SEXP _landscapemetrics_rcpp_get_nearest_neighbor(SEXP pointsSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_nearest_neighbor(SEXP pointsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -192,7 +192,7 @@ END_RCPP
 }
 // rcpp_get_unique_values
 std::vector<int> rcpp_get_unique_values(const Rcpp::IntegerVector& x, bool na_omit);
-RcppExport SEXP _landscapemetrics_rcpp_get_unique_values(SEXP xSEXP, SEXP na_omitSEXP) {
+RcppExport SEXP _landscapemetrics3_rcpp_get_unique_values(SEXP xSEXP, SEXP na_omitSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -204,26 +204,26 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_landscapemetrics_rcpp_ccl", (DL_FUNC) &_landscapemetrics_rcpp_ccl, 2},
-    {"_landscapemetrics_rcpp_xy_from_matrix", (DL_FUNC) &_landscapemetrics_rcpp_xy_from_matrix, 2},
-    {"_landscapemetrics_rcpp_cell_from_xy", (DL_FUNC) &_landscapemetrics_rcpp_cell_from_xy, 2},
-    {"_landscapemetrics_rcpp_create_neighborhood", (DL_FUNC) &_landscapemetrics_rcpp_create_neighborhood, 1},
-    {"_landscapemetrics_rcpp_get_boundaries", (DL_FUNC) &_landscapemetrics_rcpp_get_boundaries, 2},
-    {"_landscapemetrics_rcpp_get_circle", (DL_FUNC) &_landscapemetrics_rcpp_get_circle, 2},
-    {"_landscapemetrics_rcpp_get_composition_vector", (DL_FUNC) &_landscapemetrics_rcpp_get_composition_vector, 1},
-    {"_landscapemetrics_rcpp_get_coocurrence_matrix", (DL_FUNC) &_landscapemetrics_rcpp_get_coocurrence_matrix, 2},
-    {"_landscapemetrics_rcpp_get_coocurrence_matrix_diag", (DL_FUNC) &_landscapemetrics_rcpp_get_coocurrence_matrix_diag, 2},
-    {"_landscapemetrics_rcpp_get_coocurrence_matrix_single", (DL_FUNC) &_landscapemetrics_rcpp_get_coocurrence_matrix_single, 3},
-    {"_landscapemetrics_triangular_index", (DL_FUNC) &_landscapemetrics_triangular_index, 2},
-    {"_landscapemetrics_rcpp_get_coocurrence_vector", (DL_FUNC) &_landscapemetrics_rcpp_get_coocurrence_vector, 3},
-    {"_landscapemetrics_rcpp_get_entropy", (DL_FUNC) &_landscapemetrics_rcpp_get_entropy, 2},
-    {"_landscapemetrics_find_min", (DL_FUNC) &_landscapemetrics_find_min, 3},
-    {"_landscapemetrics_rcpp_get_nearest_neighbor", (DL_FUNC) &_landscapemetrics_rcpp_get_nearest_neighbor, 1},
-    {"_landscapemetrics_rcpp_get_unique_values", (DL_FUNC) &_landscapemetrics_rcpp_get_unique_values, 2},
+    {"_landscapemetrics3_rcpp_ccl", (DL_FUNC) &_landscapemetrics3_rcpp_ccl, 2},
+    {"_landscapemetrics3_rcpp_xy_from_matrix", (DL_FUNC) &_landscapemetrics3_rcpp_xy_from_matrix, 2},
+    {"_landscapemetrics3_rcpp_cell_from_xy", (DL_FUNC) &_landscapemetrics3_rcpp_cell_from_xy, 2},
+    {"_landscapemetrics3_rcpp_create_neighborhood", (DL_FUNC) &_landscapemetrics3_rcpp_create_neighborhood, 1},
+    {"_landscapemetrics3_rcpp_get_boundaries", (DL_FUNC) &_landscapemetrics3_rcpp_get_boundaries, 2},
+    {"_landscapemetrics3_rcpp_get_circle", (DL_FUNC) &_landscapemetrics3_rcpp_get_circle, 2},
+    {"_landscapemetrics3_rcpp_get_composition_vector", (DL_FUNC) &_landscapemetrics3_rcpp_get_composition_vector, 1},
+    {"_landscapemetrics3_rcpp_get_coocurrence_matrix", (DL_FUNC) &_landscapemetrics3_rcpp_get_coocurrence_matrix, 2},
+    {"_landscapemetrics3_rcpp_get_coocurrence_matrix_diag", (DL_FUNC) &_landscapemetrics3_rcpp_get_coocurrence_matrix_diag, 2},
+    {"_landscapemetrics3_rcpp_get_coocurrence_matrix_single", (DL_FUNC) &_landscapemetrics3_rcpp_get_coocurrence_matrix_single, 3},
+    {"_landscapemetrics3_triangular_index", (DL_FUNC) &_landscapemetrics3_triangular_index, 2},
+    {"_landscapemetrics3_rcpp_get_coocurrence_vector", (DL_FUNC) &_landscapemetrics3_rcpp_get_coocurrence_vector, 3},
+    {"_landscapemetrics3_rcpp_get_entropy", (DL_FUNC) &_landscapemetrics3_rcpp_get_entropy, 2},
+    {"_landscapemetrics3_find_min", (DL_FUNC) &_landscapemetrics3_find_min, 3},
+    {"_landscapemetrics3_rcpp_get_nearest_neighbor", (DL_FUNC) &_landscapemetrics3_rcpp_get_nearest_neighbor, 1},
+    {"_landscapemetrics3_rcpp_get_unique_values", (DL_FUNC) &_landscapemetrics3_rcpp_get_unique_values, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_landscapemetrics(DllInfo *dll) {
+RcppExport void R_init_landscapemetrics3(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

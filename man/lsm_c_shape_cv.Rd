@@ -33,7 +33,7 @@ equals the perimeter if the patch would be maximally compact.
 Increases, without limit, as the variation of the shape index increases.}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_shape_cv(landscape)
 
 }

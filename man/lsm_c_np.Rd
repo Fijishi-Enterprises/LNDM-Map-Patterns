@@ -31,7 +31,7 @@ necessarily contain information about the configuration or composition of the cl
 increases, without limit, as the number of patches increases}
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 lsm_c_np(landscape)
 
 }

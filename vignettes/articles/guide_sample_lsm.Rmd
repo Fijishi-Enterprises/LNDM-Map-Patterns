@@ -17,7 +17,7 @@ library(sf)
 library(ggplot2)
 
 # internal data needs to be read
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 ```
 
 **landscapemetrics** provides several functions to sample metrics *at* or *around* sample points.

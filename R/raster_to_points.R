@@ -12,7 +12,7 @@
 #' @return matrix
 #'
 #' @examples
-#' landscape <- terra::rast(landscapemetrics::landscape)
+#' landscape <- terra::rast(landscapemetrics3::landscape)
 #' raster_to_points(landscape)
 #'
 #' @aliases raster_to_points

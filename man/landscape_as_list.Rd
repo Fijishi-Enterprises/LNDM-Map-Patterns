@@ -43,7 +43,7 @@ Convert raster input to list
 Mainly for internal use
 }
 \examples{
-landscape <- terra::rast(landscapemetrics::landscape)
+landscape <- terra::rast(landscapemetrics3::landscape)
 landscape_as_list(c(landscape, landscape))
 
 }
