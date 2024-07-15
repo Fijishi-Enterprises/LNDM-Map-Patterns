@@ -1,22 +1,3 @@
-
-# landscapemetrics <img src="man/figures/logo.png" align="right" alt="" width="150" />
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-<!-- Start Badges -->
-
-README last updated: 2023-10-04
-
-| CI                                                                                                                                                                                                           | Development                                                                                                                     | CRAN                                                                                                                                    | License                                                                                                         |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [![R-CMD-check](https://github.com/r-spatialecology/landscapemetrics/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-spatialecology/landscapemetrics/actions/workflows/R-CMD-check.yaml) | [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html) | [![CRAN status](https://www.r-pkg.org/badges/version/landscapemetrics)](https://cran.r-project.org/package=landscapemetrics)            | [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) |
-| [![codecov](https://codecov.io/gh/r-spatialecology/landscapemetrics/branch/main/graph/badge.svg?token=xjYJMNMGBU)](https://codecov.io/gh/r-spatialecology/landscapemetrics)                                  | [![Project Status](http://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/)                            | [![CRAN downloads](http://cranlogs.r-pkg.org/badges/grand-total/landscapemetrics)](https://cran.r-project.org/package=landscapemetrics) | [![DOI](https://img.shields.io/badge/DOI-10.1111/ecog.04617-blue.svg)](https://doi.org/10.1111/ecog.04617)      |
-
-<!-- End Badges -->
-
-> Starting from v2.0.0, **landscapemetrics** uses `terra` and `sf`
-> internally. More information about the `terra` package can be found
-> here: <https://rspatial.org/index.html>.
-
 ## Overview
 
 **landscapemetrics** is a `R` package for calculating landscape metrics
@@ -195,27 +176,3 @@ prefix `get_`. All of them are implemented with Rcpp and have either
 memory or performance advantages compared to raster functions.
 
 For more details, see the `vignette("utility")`.
-
-### Contributing
-
-One of the major motivations behind **landscapemetrics** is the idea to
-provide an open-source code collection of landscape metrics. This
-includes, besides bug reports, especially the idea to include new
-metrics and functions. Therefore, in case you want to suggest new
-metrics or functions and in the best case even contribute code, we
-warmly welcome to do so! For more information see
-[CONTRIBUTING](CONTRIBUTING.md).
-
-Maintainers and contributors must follow this repository’s [CODE OF
-CONDUCT](CODE_OF_CONDUCT.md).
-
-### References
-
-McGarigal K., SA Cushman, and E Ene. 2023. FRAGSTATS v4: Spatial Pattern
-Analysis Program for Categorical Maps. Computer software program
-produced by the authors; available at the following web site:
-<https://www.fragstats.org/>
-
-Nowosad J., TF Stepinski. 2019. Information theory as a consistent
-framework for quantification and classification of landscape patterns.
-<https://doi.org/10.1007/s10980-019-00830-x>
