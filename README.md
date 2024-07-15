@@ -14,23 +14,6 @@ Stepinski 2019).
 function can be used in a piped workflow, as it always takes the data as
 the first argument and returns a `tibble`.
 
-#### Citation
-
-To cite **landscapemetrics** or acknowledge its use, please cite the
-following Software note, substituting the version of the application
-that you used for ‘v0.0’:
-
-<p>
-<i> Hesselbarth, M.H.K., Sciaini, M., With, K.A., Wiegand, K., Nowosad,
-J. 2019. landscapemetrics: an open‐source R tool to calculate landscape
-metrics. Ecography, 42: 1648-1657 (v0.0). </i>
-</p>
-
-For more information see [Publication
-record](https://r-spatialecology.github.io/landscapemetrics/articles/articles/publication_record.html)
-vignette. The get a BibTex entry, please use
-`citation("landscapemetrics")`.
-
 ## Installation
 
 There are several ways to install **landscapemetrics**:
